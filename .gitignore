@@ -1,2 +1,7 @@
 temp_answer
 *.o
+__pycache__/
+*.py[cod]
+.DS_Store
+presentation/node_modules/
+presentation/.build/

@@ -39,6 +39,8 @@ jobs:
         shell: bash
         run: |
           set -eo pipefail
-          
+
           python test.py --bin "python cpu.py"
-          
+
+      - name: Run instruction and boundary tests
+        run: python -m unittest discover -s tests -v
